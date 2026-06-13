@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fili d'Amore - Creazioni all'Uncinetto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap)" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🧶</span>
+                <span class="logo-text">Fili d'Amore</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#prodotti">Prodotti</a></li>
+                <li><a href="#chi-siamo">Chi Siamo</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content container">
+            <h1>Creazioni Artigianali <br><span>all'Uncinetto</span></h1>
+            <p>Ogni pezzo è unico, realizzato a mano con amore e passione. Scopri la magia del fatto a mano.</p>
+            <a href="#prodotti" class="btn btn-primary">Scopri la Collezione</a>
+        </div>
+        <div class="hero-decoration">
+            <div class="yarn-ball"></div>
+            <div class="yarn-ball"></div>
+            <div class="yarn-ball"></div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">✋</span>
+                    <h3>100% Fatto a Mano</h3>
+                    <p>Ogni creazione è realizzata interamente a mano con cura e dedizione</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌿</span>
+                    <h3>Materiali Naturali</h3>
+                    <p>Utilizziamo solo filati di alta qualità, naturali e sostenibili</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💝</span>
+                    <h3>Personalizzabile</h3>
+                    <p>Possibilità di personalizzare colori e dimensioni su richiesta</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📦</span>
+                    <h3>Spedizione Sicura</h3>
+                    <p>Imballaggio curato per proteggere ogni creazione durante il trasporto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="prodotti">
+        <div class="container">
+            <div class="section-header">
+                <h2>I Nostri Prodotti</h2>
+                <p>Scopri le nostre creazioni uniche, realizzate con passione</p>
+            </div>
+            
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="tutti">Tutti</button>
+                <button class="filter-btn" data-category="amigurumi">Amigurumi</button>
+                <button class="filter-btn" data-category="abbigliamento">Abbigliamento</button>
+                <button class="filter-btn" data-category="accessori">Accessori</button>
+                <button class="filter-btn" data-category="casa">Per la Casa</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="chi-siamo">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>🧶</span>
+                        <p>La nostra storia</p>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>La Nostra Storia</h2>
+                    <p>Benvenuti in <strong>Fili d'Amore</strong>, dove ogni punto racconta una storia. Sono Maria, e da oltre 15 anni creo con passione pezzi unici all'uncinetto.</p>
+                    <p>Tutto è iniziato dalla tradizione di famiglia: mia nonna mi ha insegnato i primi punti quando avevo solo 8 anni. Da allora, l'uncinetto è diventato non solo il mio lavoro, ma la mia più grande passione.</p>
+                    <p>Ogni creazione che realizzo porta con sé ore di dedizione, la scelta attenta dei materiali migliori e l'amore per un'arte che si tramanda di generazione in generazione.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Creazioni Vendute</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Anni di Esperienza</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Clienti Soddisfatti</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cosa Dicono i Clienti</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Ho ordinato un amigurumi per mia figlia e ne è rimasta innamorata! La qualità è incredibile e si vede tutto l'amore messo nella creazione."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Giulia M.</span>
+                        <span class="author-location">Milano</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"La copertina per neonato che ho acquistato è morbidissima e bellissima. Un regalo perfetto che è stato apprezzatissimo!"</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Marco R.</span>
+                        <span class="author-location">Roma</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Finalmente ho trovato accessori unici e di qualità. La borsa all'uncinetto che ho comprato riceve sempre complimenti!"</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Sara L.</span>
+                        <span class="author-location">Firenze</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contatti">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contattaci</h2>
+                    <p>Hai domande o vuoi richiedere una creazione personalizzata? Scrivici!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>info@filidamore.it</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+39 333 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Firenze, Italia</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Oggetto</label>
+                        <select id="subject" name="subject">
+                            <option value="info">Informazioni Generali</option>
+                            <option value="ordine">Stato Ordine</option>
+                            <option value="personalizzazione">Richiesta Personalizzazione</option>
+                            <option value="altro">Altro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Messaggio</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Iscriviti alla Newsletter</h3>
+                <p>Ricevi in anteprima le nuove creazioni e offerte esclusive</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="La tua email" required>
+                    <button type="submit" class="btn btn-secondary">Iscriviti</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">🧶 Fili d'Amore</span>
+                    <p>Creazioni artigianali all'uncinetto, fatte a mano con amore in Italia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Link Utili</h4>
+                    <ul>
+                        <li><a href="#prodotti">Prodotti</a></li>
+                        <li><a href="#chi-siamo">Chi Siamo</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="#">Spedizioni</a></li>
+                        <li><a href="#">Resi e Rimborsi</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Termini e Condizioni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Pagamenti Sicuri</h4>
+                    <div class="payment-icons">
+                        <span>💳 Carta di Credito</span>
+                        <span>🅿️ PayPal</span>
+                        <span>🏦 Bonifico</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fili d'Amore. Tutti i diritti riservati. P.IVA: IT12345678901</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Il Tuo Carrello</h3>
+            <button class="close-cart" id="closeCart">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be inserted by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Totale:</span>
+                <span id="cartTotal">€0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full">Procedi al Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Product details will be inserted by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
